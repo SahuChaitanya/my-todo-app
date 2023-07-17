@@ -22,7 +22,7 @@ for index, todo in enumerate(todos):
         del st.session_state[todo]
         st.experimental_rerun()
 
-st.text_input(label="", placeholder='Add a new Todo...',
+st.text_input(label='pass', label_visibility='hidden', placeholder='Add a new Todo...',
               on_change=add_todo, key='new_todo')
 print('Hello')
 st.session_state
